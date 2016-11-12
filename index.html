@@ -35,8 +35,8 @@ img {
 	
 <?php
 $action=$_REQUEST['action'];
-
-if ($action=="") {   // display the contact form 
+// display the contact form
+if ($action=="") { 
     <form  action="" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="action" value="submit">
     Your name:<br>
@@ -48,7 +48,8 @@ if ($action=="") {   // display the contact form
     <input type="submit" value="Send email"/>
     </form>
     } 
-else {               // send the submitted data 
+// send the submitted data
+else { 
     $name=$_REQUEST['name'];
     $email=$_REQUEST['email'];
     $message=$_REQUEST['message'];
