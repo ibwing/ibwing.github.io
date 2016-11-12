@@ -35,6 +35,7 @@ img {
 	
 <?php
 $action=$_REQUEST['action'];
+
 if ($action=="") {   // display the contact form 
     <form  action="" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="action" value="submit">
@@ -47,13 +48,11 @@ if ($action=="") {   // display the contact form
     <input type="submit" value="Send email"/>
     </form>
     } 
-else                // send the submitted data 
-    {
+else {               // send the submitted data 
     $name=$_REQUEST['name'];
     $email=$_REQUEST['email'];
     $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message==""))
-        {
+    if (($name=="")||($email=="")||($message=="")) {
 		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
 	    }
     else {		
@@ -62,7 +61,6 @@ else                // send the submitted data
 		mail("wingate.ivy@gmail.com", $subject, $message, $from);
 		echo "Email sent!";
 	    }
-    }  
 ?>
  
  
