@@ -63,7 +63,7 @@ if (($name=="")||($email=="")||($message=="")) {
     else {		
 	    $from="From: $name<$email>\r\nReturn-path: $email";
         $subject="Message sent using your contact form";
-		mail("wingate.ivy@gmail.com", $subject, $message, $from);
+		//mail("wingate.ivy@gmail.com", $subject, $message, $from);
 		echo "Email sent!";
 	    }
 ?>
