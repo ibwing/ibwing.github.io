@@ -37,7 +37,7 @@ img {
 $action=$_REQUEST['action'];
 if ($action=="")    /* display the contact form */
     {
-    ?>
+    
     <form  action="" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="action" value="submit">
     Your name:<br>
@@ -48,7 +48,6 @@ if ($action=="")    /* display the contact form */
     <textarea name="message" rows="7" cols="30"></textarea><br>
     <input type="submit" value="Send email"/>
     </form>
-    <?php
     } 
 else                /* send the submitted data */
     {
