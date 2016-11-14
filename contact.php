@@ -61,19 +61,17 @@ function check_input($data, $problem='')
     return $data;
 }
 
-//function show_error($myError)
-//{
+function show_error($myError)
+{
 
-//<html>
-//<body>
+<html>
+<body>
 
-    //<b>Please correct the following error:</b><br><br>
-//<?php 
-//echo $myError; 
-
-//</body>
-//</html>
-//exit();
-//}
+    <b>Please correct the following error:</b><br><br>
+</body>
+</html>
+}
+<?php
+echo $myError;
 exit();
 ?>
