@@ -68,14 +68,11 @@ function check_input($data, $problem='')
 //<body>
 
     //<b>Please correct the following error:</b><br><br>
-/*<?php 
-    echo $myError; 
-?>
+//<?php 
+//echo $myError; 
 
-</body>
-</html>
-<?php 
-exit();
-?>
-}
-?>
+//</body>
+//</html>
+//exit();
+//}
+
