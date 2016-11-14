@@ -45,8 +45,8 @@ End of message
 mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
-header("Location: thanks.html");
-exit();
+header('Location: thanks.html');
+exit;
 
 /* Functions we used */
 function check_input($data, $problem='')
@@ -68,11 +68,12 @@ function show_error($myError)
 <body>
 
     <b>Please correct the following error:</b><br><br>
+        <?php
+        echo $myError;
+    exit;
+    ?>
 </body>
 </html>
 }
-<?php
-echo $myError;
-exit();
-?>
+
 ?>
