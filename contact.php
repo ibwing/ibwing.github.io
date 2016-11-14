@@ -63,7 +63,7 @@ function check_input($data, $problem='')
 
 function show_error($myError)
 {
-?>
+
     <html>
     <body>
 
@@ -74,5 +74,6 @@ function show_error($myError)
     </html>
 <?php
 exit();
+ ?>
 }
 ?>
