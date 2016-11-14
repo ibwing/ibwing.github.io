@@ -1,3 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <title>Ivy Wingate</title>
+  <style>
+    body {
+      text-align: center;
+      background: black;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+img {
+	margin: 40px 0px 0px 0px;
+	border: 7px solid white;
+	border-radius: 20px;
+  </style>
+</head>
+<body>
 <?php
 /* Set e-mail recipient */
 $myemail  = "wingate.ivy@gmail.com";
@@ -77,3 +108,5 @@ function show_error($myError)
 }
 
 ?>
+</body>
+</html>
