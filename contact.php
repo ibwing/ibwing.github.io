@@ -75,4 +75,4 @@ function check_input($data, $problem='')
 //</html>
 //exit();
 //}
-
+?>
